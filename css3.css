@@ -1,0 +1,81 @@
+/* margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar dan tinggi elemen */
+}
+
+/* untuk elemen body */
+body {
+    font-family: Arial, sans-serif; /* Font  */
+    background-color: #f4f4f4; /* Warna background */
+    padding: 20px; /* Jarak dalam */
+    text-align: center; /* teks */
+}
+
+/* Container pencarian */
+.search-container {
+    margin: 20px auto;
+    display: flex; /* Rapihin */
+    flex-direction: column;
+    align-items: center; /* Supaya Search di tengah */
+}
+
+/* input pencarian */
+.search-container input[type="text"] {
+    width: 300px; /* Lebar kotak */
+    padding: 10px 20px; /* Jarak dalam */
+    border-radius: 25px; /* Lengkungan */
+    border: 1px solid #ccc; /* Border */
+    font-size: 16px; /* Ukuran font */
+    outline: none;
+}
+
+/* tombol pencarian */
+.search-container button {
+    margin-top: 1px; /* Margin atas untuk spasi dengan input */
+    background-color: #9fc4a1; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 15px 20px; /* Padding tombol */
+    border-radius: 25px; /* Radius border untuk sudut melingkar */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    transition: background-color 0.3s; /* Efek transisi pada warna latar */
+}
+
+/* untuk kontainer gambar */
+.container {
+    width: 300px; /* Lebar  */
+    background-color: #fff; /* Warna background */
+    border: 1px solid #ddd; /* Border  */
+    border-radius: 8px; 
+    padding: 10px; 
+    margin: 10px; 
+    text-align: center; /* Tengah */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* shadow */
+    display: inline-block; 
+}
+
+/* gambar dalam kontainer */
+.container img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+/* judul gambar */
+.container h5 {
+    font-size: 16px; /* Ukuran font */
+    margin-top: 10px; /* spasi */
+    color: #333; /* Warna untuk judul */
+}
+
+/* grid kontainer */
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Mengatur kolom grid */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
